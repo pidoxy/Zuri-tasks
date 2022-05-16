@@ -1,11 +1,7 @@
-# Ensuring HTML Semantics Task
+# Adding Integers With Python Task
 
- Create a single HTML page that has
+    Write a simple python program that adds 2 numbers together and output the result on your terminal.
 
-     - Your name, 
+    Your python program should use variables to carry out the addition
 
-     - A sentence about yourself and 
-
-     - Your goals for this internship.
      
- [live link](https://pidoxy-ensuring-semantics.netlify.app/)
