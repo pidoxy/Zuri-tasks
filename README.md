@@ -5,4 +5,4 @@
   Function should return True  if they are anagrams, else  False.
 
      
-<img width="1440" alt="Cli_Calculator_Pidoxy" src="https://user-images.githubusercontent.com/56538561/168654069-bed7bdfd-cd09-4c07-9b65-95606204ac52.png">
+<img width="1440" alt="Finding Anagrams Task Pidoxy" src="https://user-images.githubusercontent.com/56538561/170130349-adb8e8e9-5070-4844-8655-4c28286ab8c9.png">
