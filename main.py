@@ -1,14 +1,18 @@
-def find_anagrams(word1, word2):
 
-    if(sorted(word1)==sorted(word2)):
-      return True
-    else:
-      return False
+def read_file_content(filename):
+    # [assignment] Add your code here 
+    file = open(filename, "r")
+    print(file.read())
+    return file.read();
 
-find_anagrams("hello", "hello")
-find_anagrams("won", "now")
-find_anagrams("ello", "hllo")
+def count_words():
+    text = read_file_content("./story.txt")
+    # [assignment] Add your code here
 
-print(find_anagrams("hello", "hello")) 
-print(find_anagrams("won", "now")) 
-print(find_anagrams("ello", "hllo"))
+    asCount = text.count("as")
+    wouldCount = text.count("would")
+    print(asCount, wouldCount)
+
+    return {"as": asCount, "would": wouldCount}
+
+print(count_words())
