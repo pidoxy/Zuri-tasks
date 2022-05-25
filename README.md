@@ -31,3 +31,11 @@
 # Ensuring HTML Semantics Task
 
    https://github.com/pidoxy/Zuri-tasks/tree/ensuring-semantics
+   
+# Finding Anagrams Task
+
+   https://github.com/pidoxy/Zuri-tasks/tree/finding-anagrams
+   
+# Reading Text Files Task
+
+   https://github.com/pidoxy/Zuri-tasks/tree/text-files
