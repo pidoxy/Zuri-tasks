@@ -1,18 +1,31 @@
+class Student:
+    def __init__(self, name, age, tracks, score):
 
-def read_file_content(filename):
-    # [assignment] Add your code here 
-    file = open(filename, "r")
-    print(file.read())
-    return file.read();
+        self.name = name
+        self.age = age
+        self.tracks = tracks
+        self.score = score
 
-def count_words():
-    text = read_file_content("./story.txt")
-    # [assignment] Add your code here
+    def change_name(self, name):
+        self.name = name
+        print(self.name)
 
-    asCount = text.count("as")
-    wouldCount = text.count("would")
-    print(asCount, wouldCount)
+    def change_age(self, age):
+        self.age = int(age)
+        print(self.age)
+    
+    def add_track(self, track):
+        self.tracks.append(track)
+        print(self.tracks)
 
-    return {"as": asCount, "would": wouldCount}
+    def get_score(self):
+        return self.score
+        print(self.score)
 
-print(count_words())
+Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
+
+# Expected methods
+Bob.change_name("Peter")
+Bob.change_age(34)
+Bob.add_track("UI/UX")
+Bob.get_score()
