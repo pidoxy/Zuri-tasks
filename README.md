@@ -39,3 +39,7 @@
 # Reading Text Files Task
 
    https://github.com/pidoxy/Zuri-tasks/tree/text-files
+   
+# Classes and Objects Task
+
+   https://github.com/pidoxy/Zuri-tasks/tree/classes-objects
