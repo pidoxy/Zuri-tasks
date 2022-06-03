@@ -44,7 +44,10 @@
 
    https://github.com/pidoxy/Zuri-tasks/tree/classes-objects
    
-#Creating and Using [Local] Python Packages Task
+# Creating and Using [Local] Python Packages Task
  
    https://github.com/pidoxy/Zuri-tasks/tree/rock-paper-scissors
    
+# Django Task
+
+   https://github.com/pidoxy/Zuri-tasks/tree/django
