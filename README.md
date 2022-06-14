@@ -1,5 +1,15 @@
-# Classes and Objects Task
+# CSS Flexbox and Grid Layout
 
-  Create a Student Object and Class
+    A) Recreate a 3-column card design using CSS Flexbox  Layout
+    - This task should be on the index.html file .
+    - All information and images needed for the design can be found in this folder here
 
-<img width="1440" alt="Cli_Calculator_Pidoxy" src="https://user-images.githubusercontent.com/56538561/168654069-bed7bdfd-cd09-4c07-9b65-95606204ac52.png">
+ 
+
+    B) Recreate the design using CSS Grid Layout  
+
+    - This task should be on the grid.html file.
+
+    - You can use any background color of your choice
+
+
