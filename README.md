@@ -51,3 +51,7 @@
 # Django Task
 
    https://github.com/pidoxy/Zuri-tasks/tree/django
+   
+# CSS Flexbox and Grid Layout
+
+   https://github.com/pidoxy/Zuri-tasks/tree/css-flexbox/grid-layout
