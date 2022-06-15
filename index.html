@@ -8,141 +8,225 @@
     <title>Flex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
+        @media screen and (max-width: 767px) {
+            body {
+                background-image: url("./images/bg-intro-mobile.png");
+                background-color: hsl(0, 100%, 74%);
+                color: white;
+            }
+
+            main {
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+            }
+
+            article {
+                padding: 1rem 0 !important;
+
+            }
+        }
+
         body {
-            width: 100%;
-            font-size: 15px;
-            font-family: 'Lexend Deca', sans-serif;
+            background-image: url("./images/bg-intro-desktop.png");
+            background-color: hsl(0, 100%, 74%);
+            color: white;
             height: 100vh;
+            padding: 10% 5%;
             margin: auto;
-            padding: 10% 20%;
             box-sizing: border-box;
         }
 
         main {
             display: flex;
             margin: auto;
-            background-color: hsl(0, 0%, 95%);
-
         }
 
         article {
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            padding: 25% 0;
+
+        }
+
+        .purple {
+            background-color: hsl(248, 32%, 49%);
+            border-radius: 5px;
+            padding: 0.125rem 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            box-shadow: 0px 5px hsla(249, 10%, 26%, 20%);
+            border-radius: 5px;
+        }
+
+        form {
+            background-color: white;
             padding: 2rem 1rem;
-            
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
         }
 
-        .sedans {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: hsl(31, 77%, 52%);
-            border-radius: 0.5rem 0 0 0.5rem ;
-        }
-
-        .sedans * button {
-            color: hsl(31, 77%, 52%);
-        }
-
-        .suvs {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: hsl(184, 100%, 22%);
-        }
-
-        .suvs * button {
-            color: hsl(184, 100%, 22%) ;
-        }
-
-        .luxury {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: hsl(179, 100%, 13%);
-            border-radius: 0 0.5rem 0.5rem 0;
-
-        }
-
-        .luxury * button {
-            color: hsl(179, 100%, 13%);
-        }
-
-        h2 {
-            color: hsl(0, 0%, 95%);
-            font-family: 'Big Shoulders Display', cursive;
-
-        }
-
-        button {
-            background-color: hsl(0, 0%, 95%);
+        input[type="submit"] {
+            background-color: hsl(154, 59%, 51%);
+            padding: 0.75rem;
             border: none;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            cursor: pointer;
-            margin: 5rem 0 1rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+            width: 90%;
+            color: white;
+            font-weight: 600;
         }
-        button:active {
-            background-color: transparent;
-            border: solid hsl(0, 0%, 95%) 1px;
-            color: hsl(0, 0%, 95%);
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background-color: white;
+            /* outline: hsl(248, 32%, 49%); */
+            padding: 0.75rem;
+            border: solid hsl(246, 25%, 77%) 1px;
+            border-radius: 5px;
+            margin: 0.25rem 0;
+            width: 80%;
+            color: white;
+            font-weight: 600;
+            margin: 0.5rem;
         }
-        p {
-            color: hsla(0, 0%, 100%, 0.75);
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none !important;
+            border: solid hsl(248, 32%, 49%) 1px;
+            border-radius: 5px;
+
         }
-        img {
-            width: 25%;
-            text-align: left;
-            justify-content: left;
-            /* align-items: left; */
-            margin-right: 3rem ;
+
+        .terms {
+            color: hsl(246, 25%, 77%);
+        }
+
+        .terms>a {
+            color: hsl(0, 100%, 74%);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .error {
+            color: red;
+            text-align: right;
+            margin: 0;
+            padding-right: 1.75rem;
+            font-style: italic;
+            font-size: 0.75rem;
+        }
+
+        .input-error {
+            outline: none !important;
+            border: solid hsl(0, 100%, 74%) 1px !important;
+            border-radius: 5px !important;
+        }
+
+        .d-none {
+            display: none;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <section class="sedans">
+        <section>
             <article>
-                    <img src="images/icon-sedans.svg" alt="sedan">
-                <h2>SEDANS</h2>
+                <h1>Learn to code by watching others</h1>
                 <p>
-                    Choose a sedan for its<br /> affordability and excellent<br /> fuel economy.
-                    Ideal for<br /> cruising in the city or an<br /> your next road trip.
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                    but understanding how developers think is invaluable.
                 </p>
-                <button >Learn More</button>
             </article>
         </section>
-        <section class="suvs">
-            <article>
-                    <img src="images/icon-suvs.svg" alt="suvs">
-                <h2>SUVS</h2>
-                <p>
-                    Take an SUV for its spacious<br /> interior, power, and<br /> versality. Perfect for your<br /> next family vacation
-                    and<br /> off-road adventures.
-                </p>
-                <button >Learn More</button>
-            </article>
-        </section>
-        <section class="luxury">
-            <article>
-                    <img src="images/icon-luxury.svg" alt="luxury">
-                <h2>LUXURY</h2>
-                <p>
-                    Cruise in the best car brands<br /> without the bloated prices.<br /> Enjoy the enhanced comfort<br /> of a luxury
-                    rental and arrive<br /> in style.
-                </p>
-                <button >Learn More</button>
-            </article>
+        <section>
+            <section class="purple">
+                <p><span style="font-weight: 600;">Try it free 7 days</span> then $20/mo. thereafter</p>
+            </section>
+            <form onsubmit="submit();">
+                <input class="input-error" type="text" id="fname" name="fname" placeholder="First Name" required>
+                <p class="error">First Name cannot be empty</p>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                <p class="error">Last Name cannot be empty</p>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <p class="error">Email cannot be empty</p>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <p class="error">Password cannot be empty</p>
+                <input type="submit" value="CLAIM YOUR FREE TRIAL">
+                <p class="terms">By clicking the button, you are agreeing to our <a href="/terms-and-conditions">Terms
+                        and
+                        Services</a></p>
+            </form>
         </section>
     </main>
+    <script>
+        let form = document.forms[0];
+        
+
+        const submit = (event) => {
+            form.addEventListener("click", function (event) {
+            event.preventDefault()
+        });
+
+
+            let fname =
+                document.forms.RegForm.Name.value;
+            let lname =
+                document.forms.RegForm.Name.value;
+            let email =
+                document.forms.RegForm.EMail.value;
+            let password =
+                document.forms.RegForm.Password.value;
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.								 // Javascript reGex for Phone Number validation.
+            var regName = /\d+$/g;
+
+            // let error = false;
+
+            if (fname == "" || regName.test(fname)) {
+                window.alert("Please enter your name properly.");
+                name.focus();
+                return false;
+            }
+
+            if (lname == "" || regName.test(lname)) {
+                window.alert("Please enter your name properly.");
+                name.focus();
+                return false;
+            }
+
+            if (email == "" || !regEmail.test(email)) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (password == "") {
+                alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password should be atleast 6 character long");
+                password.focus();
+                return false;
+
+            }
+
+            return true;
+        }
+    </script>
 </body>
 
 </html>
