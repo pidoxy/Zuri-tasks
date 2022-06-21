@@ -1,4 +1,4 @@
-# Responsiveness and Media Queries
+#  Introduction to Javascript Task
 
-   Build a single-page responsive registration form using the design.
+      Write a javascript code that prints out your name, height, and country on the screen
 
