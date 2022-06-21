@@ -1,7 +1,19 @@
-let user ={
-    name:"Emmanuel Idoko",
-    height: "5 ft 9 in",
-    country: "Nigeria"
-} 
 
-console.log(`My name is ${user.name}, I am ${user.height} tall. I am from ${user.country}  `)
+
+const performArithmeticOperation = (num1, num2, symbol) => {
+  
+    if(symbol === "+"){
+        return num1 + num2;
+    } else if(symbol === "-"){
+        return num1 - num2;
+    } else if(symbol === "/"){
+        return num1/num2;
+    } else if(symbol === "*"){
+        return num1*num2;
+    }
+}
+
+performArithmeticOperation(2,3, String("+"))
+performArithmeticOperation(7,2, String("-"))
+performArithmeticOperation(6,3, String("/"))
+performArithmeticOperation(7,2, String("*"))
